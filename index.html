@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massiel De Los Angeles Neyra Céspedes</title>
+    <link rel="icon" href="Imagenes/Logo.jpg" type="image/jpg">
+    <style>
+        /* Aplicamos formato de letra, color y márgenes al body */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #b8f2ef;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header h2 {
+            margin: 5px 0 0;
+            font-size: 1.5rem;
+        }
+
+        /* Damos diseño a <div class="contenido">*/
+        .contenido {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .texto {
+            width: 60%;
+            color: #333;
+        }
+
+        .texto ul,
+        .texto ol {
+            padding-left: 20px;
+        }
+
+        /*mediante este código afectamos a la imagen del autobus para que se ubique a la derecha y también dentro del <div class="imagen">
+            tenemos el botón "comprar tu boleto ahora" por lo tanto esto también afectará a que el botón este a la derecha debajo de la imagen.*/
+        .imagen {
+            width: 35%;
+            text-align: center;
+        }
+
+        .imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Damos diseño al botón de comprar ahora, colores, margen, etc.*/
+        .boton-compra {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #28a745;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .boton-compra:hover {
+            background-color: #218838;
+        }
+
+        /* Damos diseño al pie de página el cual está con nuestro nombre y última modificacion.*/
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #0a8995;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Boletos de Autobuses Neyra</h1>
+        <h2>Viaja seguro y cómodo con nosotros</h2>
+    </header>
+    <main>
+        <div class="contenido">
+            <div class="texto">
+                <h2>¿Por qué viajar con nosotros?</h2>
+                <ul>
+                    <li>Autobuses modernos y cómodos.</li>
+                    <li>Precios accesibles y promociones especiales.</li>
+                    <li>Red de rutas extensa que cubre múltiples destinos.</li>
+                </ul>
+
+                <h2>Nuestros Servicios</h2>
+                <ol>
+                    <li>Venta de boletos en línea.</li>
+                    <li>Viajes directos y con escalas.</li>
+                    <li>Servicio de transporte VIP.</li>
+                </ol>
+            </div>
+            <div class="imagen"> <!-- utilizamos el atributo con su valor class="imagen" para poder aplicarle cambio mediante código css
+                ya que queríamos que este a la derecha del texto como aparece en la página de ejemplo-->
+                <a href="imagenes/Autobus.jpg">
+                    <img src="imagenes/Autobus.jpg" alt="Autobús en carretera">
+                </a>
+                <!-- Mediante el siguiente hipervínculo logramos que al hacer click en "comprar tu boleto ahora" nos redireccione a la 
+                 página del formulario.-->
+                <a href="formulario/formulario.html" class="boton-compra">Compra tu boleto ahora</a>
+            </div>
+        </div>
+        <h2>Video de nuestros autobuses</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9HTSaY0gzbo?si=X3KwzaaS1KfkTrjO"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Ubicación de la estación</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5961.660520023333!2d-0.9138055244515637!3d41.659409279079036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd596b35a9232867%3A0xf353983b3e86fd89!2sEstaci%C3%B3n%20Central%20de%20Autobuses!5e0!3m2!1ses!2ses!4v1732115612278!5m2!1ses!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <hr>
+    <footer>
+        <p>Realizado por Massiel De Los Angeles Neyra Céspedes, <i> Ultima modificación el 20 de Noviembre del 2024</i>
+        </p>
+    </footer>
+</body>
+
+</html>
